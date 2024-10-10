@@ -1,0 +1,35 @@
+.zero{
+    position: absolute;
+    top: 2px;
+    left: 47px;
+    font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+    .hero{
+        margin-left: 500px;
+    }
+    .text{
+        font-size: 49px;
+    }
+      
+    }
+   
+
+@media (max-width: 575.98px) {
+    .text{
+        font-size: 16px;
+    }
+      
+    .hero{
+        margin-left: 70px;
+    }
+    .carousel-item {
+      height: 60vh; 
+      
+    }
+    .carousel-item img {
+      height: 60vh;
+    }
+    }
+  

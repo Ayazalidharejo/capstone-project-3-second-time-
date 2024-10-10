@@ -1,15 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-    <h1>home </h1>
+    <link
 
-    <script src="./script.js"></script>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="bg-body-tertiary">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 col-sm-12 d-flex py-2 justify-content-between justify-content-md-start">
+            <span>Welcome to GreenMart</span>
+    
+            <div class="dropdown ms-3">
+              <button class="border-0 bg-transparent d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="d-flex align-items-center mx-3">
+                  <img class="mx-1" src="./images/en.png" alt=""> English
+                  <iconify-icon icon="ep:arrow-down"></iconify-icon>
+                </span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><img src="./images/fr.png" alt=""> Français</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./images/ru.png" alt=""> Русский</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-sm-12 py-2 text-center text-md-end">
+            <span class="mx-2">Order Tracking</span>
+            <span class="mx-4">My Wishlist</span>
+            <span>Recent Viewed Products</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container mt-4">
+      <div class="row align-items-center">
+        <div class="col-md-2 col-sm-12 text-center text-md-start">
+          <img src="./images/logo.svg" alt="">
+        </div>
+    
+        <div class="col-md-6 col-sm-12 my-2">
+          <input class="form-control" type="text" placeholder="Search...">
+        </div>
+    
+        <div class="col-md-2 col-sm-6 d-flex align-items-center my-2">
+          <iconify-icon class="fs-2 text-success" icon="solar:phone-bold"></iconify-icon>
+          <div class="d-flex flex-column ms-2">
+            <span>Online Shopping</span>
+            <span>+78 925-942-2900</span>
+          </div>
+        </div>
+    
+        <div class="col-md-2 col-sm-6 d-flex align-items-center my-2">
+          <iconify-icon class="fs-2 text-success" icon="mdi:user"></iconify-icon>
+          <div class="d-flex flex-column ms-2">
+            <span>Account</span>
+            <span>Login/Register</span>
+          </div>
+        </div>
+    
+        <div class="col-md-2 col-sm-12 d-flex justify-content-center my-2">
+          <button class="px-4 d-flex align-items-center position-relative bg-success border-0 rounded-2">
+            <iconify-icon class="fs-1" icon="bxs:cart"></iconify-icon>
+            <div class="d-flex flex-column mx-2">
+              <span class="text-white">Cart</span>
+              <span class="text-white">$0.00</span>
+              <span class="zero bg-warning rounded-5 px-2 py-1 fw-bold">0</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div> -->
+    
+
+
+<!-- hero section -->
+
+
+<!-- <div class="container-fluid">
+  <div class="position-relative">
+    <img src="./images/background-slider-01.jpg" class="img-fluid" alt="">
+    <div class="position-absolute top-50 start-50 me-5 translate-middle  text-white">
+
+  <h1>Farm Fresh <span>Vegetables & <br> Food</span>100%</h1>
+<p>Always fresh organic products for you</p>
+<button type="button" class="btn btn-warning">Shop Now</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</div> -->
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand">Welcome to GreenMart </a>
+    <div class="btn-group me-auto ms-5">
+      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+         <a class="border-0 text-decoration-none text-black" href="#"> <img  src="./images/en.png" class="img-fluid me-2" alt="">English</a>
+      </button>
+      <ul class="dropdown-menu btn-outline-success ">
+        <li><a class="dropdown-item btn-outline-success" href="#"><img src="./images/fr.png" class="img-fluid" alt=""> Français</a></li>
+        <li><a class="dropdown-item drp-1" href="#"> <img src="./images/ru.png" class="img-fluid" alt=""> Русский</a></li>
+      </ul>
+    </div>
+    <ul class="list-unstyled d-flex align-items-center  mt-2 btn-outline-success ">
+      <li>Order Tracking</li>
+      <li class="mx-3 ">My Wishlist</li>
+      <li> Recent Viewed Products</li>
+  </ul>
+</nav>
+<nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <!-- Logo -->
+     <div>
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid" src="./images/logo.svg" alt="logo" />
+    </a>
+  </div>
+    <!-- Toggler Button for Mobile View -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search Bar -->
+      <div class="input-group lg-w-25 w-100 w-25 my-3">
+        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search"/>
+        <button class="btn border-dark-subtle border-start-0" type="button" id="button-addon2">
+          <iconify-icon icon="material-symbols:search" style="color: black"></iconify-icon>
+        </button>
+      </div>
+      <!-- Contact Info -->
+      <div class="d-flex align-items-center w-50 ms-5 me-lg-5 ">
+          <iconify-icon icon="material-symbols:call" width="30" height="30" style="color: green" ></iconify-icon>
+          <div class="d-flex flex-column">
+              <span class=" fw-bold">Online Shopping</span>
+              <span>+78 925-942-2900</span>
+            </div>
+          </ul>
+        </div>
+        <!-- Login/Register -->
+        <div class="d-flex align-items-center me-lg-5 ms-5">
+          <iconify-icon
+            icon="mdi:user"
+            width="30"
+            height="30"
+            style="color: green"
+          ></iconify-icon>
+          <ul class="list-unstyled ms-3">
+              <li class="fw-bold">Account</li>
+              <li>Login/Refister</li>
+          </ul>
+        </div>
+        <!-- Cart -->
+        <div class="d-flex align-items-center bg-success text-white rounded-3 px-4 py-2 me-5">
+          <div class="position-relative ">
+            <iconify-icon class="position-relative"
+              icon="mdi:shopping-cart" width="20" height="20"  style="color: white"></iconify-icon>
+            <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-warning">0</span>
+          </div>
+          <h6 class="mb-0 ms-4">Cart <br /><span>$0.00</span></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="navbar-brand opacity-25" href="#">|</span>
+      
+          <a class="nav-link dropdown-toggle ms-5 text-success fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="navbar-brand opacity-25" href="#">|</span>
+          <a class="nav-link dropdown-toggle ms-5 fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="navbar-brand opacity-25" href="#">|</span>
+          <a class="nav-link dropdown-toggle ms-5 fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="navbar-brand opacity-25" href="#">|</span>
+          <a class="nav-link dropdown-toggle ms-5 fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Vagetables
+          </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="navbar-brand opacity-25" href="#">|</span>
+          <a class="nav-link dropdown-toggle ms-5 fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <span class="navbar-brand opacity-25" href="#">|</span>
+          <a class="nav-link dropdown-toggle ms-5 btn-outline-success Semibold fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Flash
+          </a>
+    </div>
+    <span class="navbar-brand opacity-25" href="#">|</span>
+  </div>
+</nav>
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active position-relative">
+      <img src="./images/hero2.jfif" class="d-block w-100" alt="picture">
+      <div class="position-absolute top-50 start-50 translate-middle hero text-white">
+        <div>   <span class="fs-1 fw-bold"> Form Fresh</span> <span class="fs-1">Vegetables&</span>
+           <h4 class="text text-end d-flex justify-content-end"> Food <b>100% organic.</b><h4>
+           <p class="text-end me-1 text">Always Fresh organic products for you.  <br> <button type="button" class="btn btn-warning mt-3">Shop Now</button></p>
+          
+         </div>
+       </div>
+      
+      
+    </div>
+    <div class="carousel-item position-relative">
+      <img  src="./images/hero.jfif" class="d-block w-100" alt="pieture">
+     
+    <div class="position-absolute top-50 start-50 translate-middle hero text-white">
+      <span class="fs-1 fw-bold">Form Fresh</span> <span class="fs-1">Meat &</span> <br>
+      <span class="fs-1 text">Poultry</span> <span class="fs-1 fw-bold">100% organic.</span>
+      <p class="text-end me-1">Always Fresh organic products.  
+        <br>
+        <button type="button " class="btn btn-warning mt-3">Shop Now</button>
+      </p>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+    <span class="visually-hidden ">Previous</span>
+  
+  </button>
+  <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+ 
+
 </body>
 </html>
