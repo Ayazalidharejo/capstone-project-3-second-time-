@@ -1,4 +1,4 @@
-.zero{
+.zero {
     position: absolute;
     top: 2px;
     left: 47px;
@@ -6,34 +6,45 @@
 }
 
 @media (min-width: 1200px) {
-    .hero{
+    .hero {
         margin-left: 500px;
     }
-    .text{
-        font-size: 49px;
+
+    .text {
+        font-size: 30px;
     }
-      
+    .text2 {
+        font-size: 20px;
     }
-   
+
+}
+
+
 
 @media (max-width: 575.98px) {
-    .text{
+    .text {
         font-size: 16px;
     }
-      
-    .hero{
+    .hero-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .hero {
         margin-left: 70px;
     }
+
     .carousel-item {
-      height: 60vh; 
-      
+        height: 60vh;
+
     }
+
     .carousel-item img {
-      height: 60vh;
+        height: 60vh;
     }
-    }
+}
+
+
   
-    .cards:hover{
-        border: 1px solid black;
-        transition:  0.5s ease,  0.5s ease; 
-    }
+     
