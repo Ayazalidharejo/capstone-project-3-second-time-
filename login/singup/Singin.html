@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../style.css">
     <link
 
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <title>hero section</title>
+    <title>singin section</title>
   </head>
   <body>
    
@@ -68,12 +68,13 @@
               </div>
               <!-- Login/Register -->
               <div class="d-flex align-items-center me-lg-5 ms-5">
-                <iconify-icon
+             <a href="./Singin.html">   <iconify-icon
                   icon="mdi:user"
                   width="30"
                   height="30"
                   style="color: green"
                 ></iconify-icon>
+              </a>
                 <ul class="list-unstyled ms-3">
                     <li class="fw-bold">Account</li>
                     <li>Login/Refister</li>
@@ -100,7 +101,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <span class="navbar-brand opacity-25" href="#">|</span>
             
-                <a class="nav-link dropdown-toggle ms-5 text-success fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle ms-5 text-success fw-bold" href="/Index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Home</a>
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -140,17 +141,17 @@
       <div class="container my-5">
         <div class="row justify-content-around">
           <div class="col-lg-5 col-md-6 col-12">
-            <form>
+            <form id="loginForm">
               <h6>Home <span class="text-secondary">/ Page</span></h6>
               <div class="mb-3">
                 <h1>Log in</h1>
                 <p>Enter your username and password to login.</p>
                 <label for="loginEmail" class="form-label">Username or email</label>
-                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="Email" >
               </div>
               <div class="mb-3">
                 <label for="loginPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="loginPassword">
+                <input type="password" class="form-control" id="Password">
               </div>
               <div class="mb-3 form-check d-flex justify-content-between">
                 <div>
@@ -164,16 +165,16 @@
           </div>
       
           <div class="col-lg-5 col-md-6 col-12">
-            <form>
+            <form id="signupForm">
               <div class="mb-3">
                 <h1>Register</h1>
                 <p>Fill out the form below to register an account.</p>
                 <label for="registerEmail" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="userEmail" >
               </div>
               <div class="mb-3">
                 <label for="registerPassword" class="form-label">Password</label>
-                <input type="password" class="form-control" id="registerPassword">
+                <input type="password" class="form-control" id="userPassword">
               </div>
               <button type="submit" class="btn btn-success px-5">Register</button>
             </form>
@@ -270,5 +271,7 @@
   
 </div>
   <!-- footer end -->
+  <script src="../../javaScript/Login.js"></script>
+ <script src="../../javaScript/singup.js"></script>
 </body>
 </html>
