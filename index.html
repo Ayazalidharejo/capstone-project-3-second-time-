@@ -21,26 +21,32 @@
   </head>
   <body>
    
+   
+    
 
-<nav class="navbar bg-body-tertiary ">
-  <div class="container">
-    <a class="navbar-brand">Welcome to GreenMart </a>
-    <div class="btn-group me-auto ms-5 flex">
-      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-         <a class="border-0 text-decoration-none text-black" href="#"> <img  src="./images/en.png" class="img-fluid me-2" alt="">English</a>
-      </button>
-      <ul class="dropdown-menu btn-outline-success ">
-        <li><a class="dropdown-item btn-outline-success" href="#"><img src="./images/fr.png" class="img-fluid" alt=""> Français</a></li>
-        <li><a class="dropdown-item drp-1" href="#"> <img src="./images/ru.png" class="img-fluid" alt=""> Русский</a></li>
-      </ul>
-    </div>
-    <ul class="list-unstyled d-flex align-items-center  mt-2 btn-outline-success ">
-      <li>Order Tracking</li>
-      <li class="mx-3 ">My Wishlist</li>
-      <li> Recent Viewed Products</li>
-  </ul>
-</nav>
-<nav class="navbar navbar-expand-lg bg-white">
+
+
+
+    <nav class="navbar bg-body-tertiary bar">
+      <div class="container">
+        <a class="navbar-brand d-none d-md-block">Welcome to GreenMart </a>
+        <div class="btn-group me-auto ms-5 flex d-none d-md-block">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+             <a class="border-0 text-decoration-none text-black" href="#"> <img  src="./images/en.png" class="img-fluid me-2" alt="">English</a>
+          </button>
+          <ul class="dropdown-menu btn-outline-success ">
+            <li><a class="dropdown-item btn-outline-success" href="#"><img src="./images/fr.png" class="img-fluid" alt=""> Français</a></li>
+            <li><a class="dropdown-item drp-1" href="#"> <img src="./images/ru.png" class="img-fluid" alt=""> Русский</a></li>
+          </ul>
+        </div>
+        <ul class="list-unstyled d-flex align-items-center  mt-2 btn-outline-success ">
+          <li class="bar">Order Tracking</li>
+          <li class="mx-3 bar">My Wishlist</li>
+          <li class="bar"> Recent Viewed Products</li>
+        </ul>
+      </div>
+    </nav>
+<nav class="navbar navbar-expand-lg bg-white sticky-top z-1">
   <div class="container">
     <!-- Logo -->
      <div >
@@ -93,6 +99,7 @@
     </div>
   </div>
 </nav>
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -241,7 +248,7 @@
   </div>
   
   <div class="container mt-5 ">
-    <div class="d-flex justify-content-between ms-5">
+    <div class="d-flex justify-content-between ms-5 me-5">
       <div><h3>Daily Chilled Vegetables</h3></div>
       <div>Shop All</div>
     </div>
@@ -252,21 +259,32 @@
     <div class="row justify-content-center">
         <!-- Card 1 -->
         <div class="col-12 col-md-3 col-lg-2 mb-4 mx-3 d-flex justify-content-center">
-            <div class="cards p-2 h-100">
-                <div class="card-body">
-                    <img class="img-fluid" src="./images/1.jpg" alt="Image of a carton of eggs" height="100" width="150" />
-                    <div class="badge bg-light text-secondary border border-secondary rounded-pill mb-2">Betterfoods</div>
-                    <h6 class="card-title text-secondary fw-semibold">Zesco Ripe Bananas</h6>
-                    <p class="card-text text-secondary">350g</p>
-                    <div class="d-flex align-items-center mb-2">
-                        <span class="text-warning"></span>
-                        <span class="ms-2 fw-semibold">3</span>
-                    </div>
-                    <p class="text-danger fs-5 fw-bold">$120.00</p>
-                    <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
-                </div>
-            </div>
-        </div>
+          <div class="cards p-2 h-100">
+              <div class="card-body">
+                  <img class="img-fluid" src="./images/1.jpg" alt="Image of a carton of eggs" height="100" width="150" />
+                  <div class="badge bg-light text-secondary border border-secondary rounded-pill mb-2">Betterfoods</div>
+                  <h6 class="card-title text-secondary fw-semibold">Zesco Ripe Bananas</h6>
+                  <p class="card-text text-secondary">350g</p>
+                  <div class="d-flex align-items-center mb-2">
+                      <span class="text-warning"></span>
+                      <span class="ms-2 fw-semibold">3</span>
+                      <span class="text-warning">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
+                  </div>
+                  <p class="text-danger fs-5 fw-bold">$120.00</p>
+                  <button class="btn btn-success text-white fw-bold px-4">
+                    <iconify-icon icon="bxs:cart"></iconify-icon>
+                    <span class="fw-semibold">Add to cart</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+      
 
         <!-- Repeat similar structure for other cards -->
         <div class="col-12 col-md-3 col-lg-2 mb-4 mx-3 d-flex justify-content-center">
@@ -279,6 +297,13 @@
                     <div class="d-flex align-items-center mb-2">
                         <span class="text-secondary"></span>
                         <span class="ms-2 fw-semibold">3</span>
+                        <span class="text-warning">
+                          <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$120.00</p>
                     <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -297,6 +322,13 @@
                     <div class="d-flex align-items-center mb-2">
                         <span class="text-warning"></span>
                         <span class="ms-2 fw-semibold">0</span>
+                        <span class="text-warning">
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$45.00</p>
                     <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -314,9 +346,17 @@
                     <p class="card-text text-secondary">450g</p>
                     <div class="d-flex align-items-center mb-2">
                         <span class="text-secondary">
+                          <span class="ms-2 fw-semibold">1</span>
+                          <span class="text-warning">
                             <iconify-icon icon="line-md:star-filled"></iconify-icon>
                         </span>
-                        <span class="ms-2 fw-semibold">1</span>
+                       
+                          <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$40.00</p>
                     <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -335,6 +375,13 @@
                     <div class="d-flex align-items-center mb-2">
                         <span class="text-secondary"></span>
                         <span class="ms-2 fw-semibold">0</span>
+                        <span class="text-warning">
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                          <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$100.00</p>
                     <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -344,10 +391,13 @@
     </div>
 </div>
 <div class="container">
-  <div class=" d-flex justify-content-between ms-5 me-5">
-<div><img src="./images/banner-06.jpg" alt=""></div>
-<div><img src="./images/banner-07.jpg" alt=""></div>
-
+  <div class="row d-flex align-items-center">
+    <div class="col-md-6 col-sm-12 my-5">
+      <img class="img-fluid" src="./images/banner-06.jpg" alt="">
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <img class="img-fluid" src="./images/banner-07.jpg" alt="">
+    </div>
   </div>
 </div>
 
@@ -391,6 +441,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-warning"></span>
                       <span class="ms-2 fw-semibold">3</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -409,6 +466,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-secondary"></span>
                       <span class="ms-2 fw-semibold">3</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -427,7 +491,14 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-warning"></span>
                       <span class="ms-2 fw-semibold">0</span>
-                  </div>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon> 
+                           <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
+                    </div>
                   <p class="text-danger fs-5 fw-bold">$45.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
               </div>
@@ -444,9 +515,16 @@
                   <p class="card-text text-secondary">450g</p>
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-secondary">
-                          <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        
                       </span>
                       <span class="ms-2 fw-semibold">1</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$40.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -465,6 +543,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-secondary"></span>
                       <span class="ms-2 fw-semibold">0</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$100.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -539,6 +624,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-secondary"></span>
                       <span class="ms-2 fw-semibold">3</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -554,9 +646,16 @@
                   <div class="badge bg-light text-secondary border border-secondary rounded-pill mb-2">Betterfoods</div>
                   <h6 class="card-title text-secondary fw-semibold">Tesco Green Seedless</h6>
                   <p class="card-text text-secondary">350g</p>
-                  <div class="d-flex align-items-center mb-2">
-                      <span class="text-warning"></span>
-                      <span class="ms-2 fw-semibold">0</span>
+                  <div class=" mb-2 d-flex align-items-center">
+                      <span class="text-warning d-flex align-items-center">
+                      <span class="ms-2 fw-semibold">0</span> <span class="text-warning d-flex align-items-center">
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
+                    </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$45.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -573,10 +672,19 @@
                   <h6 class="card-title text-secondary fw-semibold">Waterfi SwimActive</h6>
                   <p class="card-text text-secondary">450g</p>
                   <div class="d-flex align-items-center mb-2">
-                      <span class="text-secondary">
+                      <span class="text-secondary d-flex align-items-center">
+                        <span class="ms-2 fw-semibold d-flex align-items-center">1 <span class="text-warning d-flex align-items-center">
                           <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                     
+                      
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
                       </span>
-                      <span class="ms-2 fw-semibold">1</span>
+                    </span>
+                  </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$40.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -595,6 +703,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-secondary"></span>
                       <span class="ms-2 fw-semibold">0</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$100.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -618,6 +733,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-warning"></span>
                       <span class="ms-2 fw-semibold">3</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -637,6 +759,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-secondary"></span>
                       <span class="ms-2 fw-semibold">3</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -655,6 +784,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-warning"></span>
                       <span class="ms-2 fw-semibold">0</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$45.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -671,10 +807,19 @@
                   <h6 class="card-title text-secondary fw-semibold">Waterfi SwimActive</h6>
                   <p class="card-text text-secondary">450g</p>
                   <div class="d-flex align-items-center mb-2">
-                      <span class="text-secondary">
-                          <iconify-icon icon="line-md:star-filled"></iconify-icon>
-                      </span>
+                   
                       <span class="ms-2 fw-semibold">1</span>
+                      <span class="text-secondary">
+                       
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
+                    </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$40.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -693,6 +838,13 @@
                   <div class="d-flex align-items-center mb-2">
                       <span class="text-secondary"></span>
                       <span class="ms-2 fw-semibold">0</span>
+                      <span class="text-warning d-flex align-items-center">
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                        <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                      </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$100.00</p>
                   <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
@@ -710,152 +862,104 @@
 
 
 <!-- Cart section with image end -->
+<div class=" bg-secondary-subtle">
+<div class="container">
+  <div class="container-fluid p-5">
+    <p><span class="fw-bold">GreenMart</span> makes online grocery delivery and grocery shopping fast and easy. Get groceries delivered and order the best of seasonal farm fresh food, great local finds, quick meal solutions, incredible new products and exclusives, and all of your favorite grocery brands. It’s supermarket delivery with so much more: from Fresh Deals that help you save big to convenient delivery windows that work around your schedule, we’ve thought of everything to make grocery home delivery simple for you. We’re a grocery delivery service you can trust as we source only the highest-quality products and deliver them directly to your door.</p>
 
-
-<div class="bg-secondary-subtle">
-  <div class="container p-5">
-      <p> <span class="fw-bold">GreenMart</span> makes online grocery delivery and grocery shopping fast and easy.
-          Get groceries delivered and order the best
-          of
-          seasonal farm fresh food, great local finds, quick meal solutions, incredible new products and
-          exclusives,
-          and
-          all of your favorite grocery brands. It’s supermarket delivery with so much more: from Fresh Deals that
-          help
-          you
-          save big to convenient delivery windows that work around your schedule, we’ve thought of everything to
-          make
-          grocery home delivery simple for you. We’re a grocery delivery service you can trust as we source only
-          the
-          highest-quality products and deliver them directly to your door.</p>
-
-
-
-      <div class=" d-flex flex-wrap align-items-center justify-content-between mt-5">
-
-          <div class="d-flex align-items-center bg-white rounded-2 py-2 px-5 mb-2">
-              <div>
-                  <iconify-icon class="display-4" icon="mdi:house-city" style="color: #00ab55"></iconify-icon>
-              </div>
-              <div class="mx-2">
-                  <p>Home Online Shopping</p>
-                  <p>+78 925-942-2900</p>
-              </div>
-
+    <div class="row mt-5">
+      <div class="col-md-4 mb-2">
+        <div class="d-flex align-items-center bg-white rounded-2 py-2 px-5">
+          <iconify-icon class="display-4" icon="mdi:house-city" style="color: #00ab55"></iconify-icon>
+          <div class="mx-2">
+            <p>Home Online Shopping</p>
+            <p>+78 925-942-2900</p>
           </div>
-
-          <div class="d-flex align-items-center bg-white rounded-2  py-2 px-5 mb-2">
-              <div>
-                  <iconify-icon class="display-4" icon="ri:whatsapp-fill" style="color: #3dbae1"></iconify-icon>
-              </div>
-              <div class="mx-2">
-                  <p>Support Center</p>
-                  <p>+78 925-942-2901</p>
-              </div>
-
-          </div>
-
-
-          <div class="d-flex align-items-center bg-white rounded-2 py-2 px-5 mb-2">
-              <div>
-                  <iconify-icon class="display-4" icon="material-symbols:store" style="color: #f19e20"></iconify-icon>
-              </div>
-              <div class="mx-2">
-                  <p>Store Locations</p>
-                  <p>View all 5 stores</p>
-              </div>
-
-          </div>
-
+        </div>
       </div>
 
+      <div class="col-md-4 mb-2">
+        <div class="d-flex align-items-center bg-white rounded-2 py-2 px-5">
+          <iconify-icon class="display-4" icon="ri:whatsapp-fill" style="color: #3dbae1"></iconify-icon>
+          <div class="mx-2">
+            <p>Support Center</p>
+            <p>+78 925-942-2901</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-4 mb-2">
+        <div class="d-flex align-items-center bg-white rounded-2 py-2 px-5">
+          <iconify-icon class="display-4" icon="material-symbols:store" style="color: #f19e20"></iconify-icon>
+          <div class="mx-2">
+            <p>Store Locations</p>
+            <p>View all 5 stores</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+</div>
 
-
-
-    <!-- footer start -->
-    <div class="container p-4">
-      <div class="row">
-          <div class="col-md-3">
-  
-              <div class="logo">
-                  <img alt="Greenmart logo" height="40" src="./images/foort.svg" />
-              </div>
-  
-              <div class="contact-info mt-3">
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id luctus mauris, eget
-                      varius libero. Vestibulum metus leo.
-                  </p>
-  
-                  <div class="d-flex">
-                      <iconify-icon class="fs-4" icon="clarity:email-line"></iconify-icon>
-                      <p class="align-items-center mx-2 text-success"> contact@example.com </p>
-                  </div>
-  
-                  <div class="d-flex">
-                      <iconify-icon class="fs-4" icon="material-symbols:call"></iconify-icon>
-                      <p class="align-items-center mx-2">+884 123 456 789</p>
-                  </div>
-  
-                  <div class="d-flex">
-                      <iconify-icon class="fs-4" icon="mdi-light:home"></iconify-icon>
-                      <p class="align-items-center mx-1 fs-6">70 West Buckingham Ave, NY 11735 </p>
-                  </div>
-  
-                  <div class="mb-3 mt-2">
-                      <iconify-icon class="fs-5 mx-2" icon="ri:facebook-fill"></iconify-icon>
-                      <iconify-icon class="fs-5 mx-2" icon="line-md:instagram"></iconify-icon>
-                      <iconify-icon class="fs-5 mx-2" icon="icon-park-solid:instagram-one"></iconify-icon>
-                      <iconify-icon class="fs-5 mx-2" icon="mingcute:twitter-fill"></iconify-icon>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-2">
-
-          </div>
-          <div class="col-md-2">
-              <h5 class="fw-bold fs-6">ABOUT</h5>
-              <ul class="list-unstyled t">
-  
-                  <li class="mt-3"><a class="text-decoration-none text-black" href="#">About Us</a></li>
-                  <li class="mt-3"><a class="text-decoration-none text-black" href="#">Contact Us</a></li>
-                  <li class="mt-3"><a class="text-decoration-none text-black" href="#">Help Center</a></li>
-                  <li class="mt-3"><a class="text-decoration-none text-black" href="#">FAQ</a></li>
-              </ul>
-  
-          </div>
-          <div class="col-md-2">
-              <h5 class="fw-bold fs-6">HELP & GUIDE</h5>
-              <ul class="list-unstyled t">
-  
-                  <li class="mt-3"><a class="text-decoration-none text-black" href="#">Term Of Use</a></li>
-                  <li class="mt-3"><a class="text-decoration-none text-black" href="#">Privacy Policy</a></li>
-                  <li class="mt-3"><a class="text-decoration-none text-black" href="#">Shipping & Delivery</a></li>
-              </ul>
-          </div>
-  
-          <div class="col-md-3">
-              <h5 class="fw-bold fs-6 mb-4"> NEWSLETTER </h5>
-              <p>Don't miss out <strong>thousands of great deals</strong> & promotions.</p>
-  
-              <div>
-                  <input class="bg-secondary-subtle py-2 w-100 border-0 rounded-1 mb-2 mt-2" placeholder="  Email address..."
-                      type="email" />
-                  <button type="button" class="btn btn-success btn-outline-light px-4 mt-2 border-0">Success</button>
-              </div>
-
-              
-          </div>
+<!-- Footer Start -->
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-3 mb-3">
+      <img alt="Greenmart logo" height="40" src="./images/foort.svg" />
+      <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id luctus mauris, eget varius libero. Vestibulum metus leo.</p>
+      <div class="d-flex mb-2">
+        <iconify-icon class="fs-4" icon="clarity:email-line"></iconify-icon>
+        <p class="align-items-center mx-2 text-success">contact@example.com</p>
       </div>
-      <div class="d-flex justify-content-between mt-2">
-        <p> © 2024 <span class="fw-bold">Greenmart</span>. All rights reserved.</p>
-        <img  class="img-fluid " src="./images/pyment.png" />
+      <div class="d-flex mb-2">
+        <iconify-icon class="fs-4" icon="material-symbols:call"></iconify-icon>
+        <p class="align-items-center mx-2">+884 123 456 789</p>
       </div>
-      
+      <div class="d-flex">
+        <iconify-icon class="fs-4" icon="mdi-light:home"></iconify-icon>
+        <p class="align-items-center mx-1 fs-6">70 West Buckingham Ave, NY 11735</p>
+      </div>
+      <div class="mt-2">
+        <iconify-icon class="fs-5 mx-2" icon="ri:facebook-fill"></iconify-icon>
+        <iconify-icon class="fs-5 mx-2" icon="line-md:instagram"></iconify-icon>
+        <iconify-icon class="fs-5 mx-2" icon="icon-park-solid:instagram-one"></iconify-icon>
+        <iconify-icon class="fs-5 mx-2" icon="mingcute:twitter-fill"></iconify-icon>
+      </div>
+    </div>
+
+    <div class="col-md-2 mb-3">
+      <h5 class="fw-bold fs-6">ABOUT</h5>
+      <ul class="list-unstyled">
+        <li class="mt-3"><a class="text-decoration-none text-black" href="#">About Us</a></li>
+        <li class="mt-3"><a class="text-decoration-none text-black" href="#">Contact Us</a></li>
+        <li class="mt-3"><a class="text-decoration-none text-black" href="#">Help Center</a></li>
+        <li class="mt-3"><a class="text-decoration-none text-black" href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-2 mb-3">
+      <h5 class="fw-bold fs-6">HELP & GUIDE</h5>
+      <ul class="list-unstyled">
+        <li class="mt-3"><a class="text-decoration-none text-black" href="#">Term Of Use</a></li>
+        <li class="mt-3"><a class="text-decoration-none text-black" href="#">Privacy Policy</a></li>
+        <li class="mt-3"><a class="text-decoration-none text-black" href="#">Shipping & Delivery</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <h5 class="fw-bold fs-6 mb-4">NEWSLETTER</h5>
+      <p>Don't miss out <strong>thousands of great deals</strong> & promotions.</p>
+      <input class="bg-secondary-subtle py-2 w-100 border-0 rounded-1 mb-2 mt-2" placeholder="Email address..." type="email" />
+      <button type="button" class="btn btn-success btn-outline-light px-4 mt-2 border-0">Subscribe</button>
+    </div>
   </div>
+
+  <div class="d-flex justify-content-between mt-2 align-items-center">
+    <p>© 2024 <span class="fw-bold">Greenmart</span>. All rights reserved.</p>
+    <img class="img-fluid" src="./images/pyment.png" />
+  </div>
+</div>
       <!-- footer end -->
 </body>
 </html>
