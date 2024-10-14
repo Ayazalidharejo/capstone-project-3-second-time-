@@ -21,6 +21,40 @@
   </head>
   <body>
    
+  
+
+
+    <!-- <div class="card-body">
+         <img class="img-fluid" src="./images/1.jpg" alt="Image of a carton of eggs" height="100" width="150" />
+       <div class="badge bg-light text-secondary border border-secondary rounded-pill mb-2">Betterfoods</div>
+       <h6 class="card-title text-secondary fw-semibold">Zesco Ripe Bananas</h6>
+       <p class="card-text text-secondary">350g</p>
+   <div class="d-flex align-items-center mb-2">
+         <span class="text-warning"></span>
+         <span class="ms-2 fw-semibold">3</span>
+       <span class="text-warning">
+             <iconify-icon icon="line-md:star-filled"></iconify-icon>
+             <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                  <iconify-icon icon="line-md:star-filled"></iconify-icon>
+                   <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+                   <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
+               </span>
+           </div>
+           <p class="text-danger fs-5 fw-bold">$120.00</p>
+      
+           <button 
+         class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+       data-name="Zesco Ripe Bananas" 
+       data-price="120.00"  
+        data-img="./images/1.jpg"
+        data-made="Betterfoods"
+     >
+              <iconify-icon icon="bxs:cart"></iconify-icon>
+               <span class="fw-semibold">Add to cart</span>
+           </button>
+       </div> -->
+      
+    
    
     
 
@@ -88,11 +122,11 @@
           </ul>
         </div>
         <!-- Cart -->
-        <div class="d-flex align-items-center bg-success text-white rounded-3 px-4 py-2 me-">
-          <div class="position-relative ">
+        <div class="d-flex align-items-center bg-success text-white rounded-3 px-4 py-2 me-" >
+          <div class="position-relative "  class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <iconify-icon class="position-relative"
               icon="mdi:shopping-cart" width="20" height="20"  style="color: white"></iconify-icon>
-            <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-warning">0</span>
+            <span id="cartQuantityBadge" class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-warning ">0</span>
           </div>
           <h6 class="mb-0 ms-4">Cart <br /><span>$0.00</span></h6>
         </div>
@@ -278,10 +312,17 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4">
-                    <iconify-icon icon="bxs:cart"></iconify-icon>
-                    <span class="fw-semibold">Add to cart</span>
-                  </button>
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                data-name="Zesco Ripe Bananas" 
+                data-price="120.00"  
+                 data-img="./images/1.jpg"
+                 data-made="Betterfoods"
+              >
+                       <iconify-icon icon="bxs:cart"></iconify-icon>
+                        <span class="fw-semibold">Add to cart</span>
+                    </button>
+
               </div>
           </div>
       </div>
@@ -307,10 +348,28 @@
                         </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$120.00</p>
-                    <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                    <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                    <button 
+                    class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                    data-name="Orange Peek Zest" 
+                    data-kg="350g" 
+                    data-img="./images/2.jpg"
+                    data-made="Betterfoods"
+                  >
+                    <iconify-icon icon="bxs:cart"></iconify-icon>
+                    <span class="fw-semibold">Add to cart</span>
+                  </button>
+                  
                 </div>
             </div>
         </div>
+
+       
+
+
+
+
+
 
         <!-- Card 3 -->
         <div class="col-12 col-md-3 col-lg-2 mb-4 mx-3 d-flex justify-content-center align-items-center">
@@ -318,7 +377,7 @@
                 <div class="card-body">
                     <img class="img-fluid" src="./images/3.jpg" alt="Image of a seedless grape" height="100" width="150" />
                     <div class="badge bg-light text-secondary border border-secondary rounded-pill mb-2">Betterfoods</div>
-                    <h6 class="card-title text-secondary fw-semibold">Tesco Green Seedless</h6>
+                    <h6 class="card-title text-secondary fw-semibold product-nam">Tesco Green Seedless</h6>
                     <p class="card-text text-secondary">350g</p>
                     <div class="d-flex align-items-center mb-2">
                         <span class="text-warning"></span>
@@ -332,7 +391,7 @@
                         </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$45.00</p>
-                    <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                    <button class="btn btn-success text-white fw-bold px-4  ms-4 mb-1 add-to-cart-btn plus" data-name="Fresh green asparagus" data-kg="350g" data-img="./images/3.jpg"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
                 </div>
             </div>
         </div>
@@ -360,7 +419,18 @@
                         </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$40.00</p>
-                    <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                    <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                    <button 
+                    class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                    data-name="Waterfi SwimActive" 
+                    data-kg="450g" 
+                    data-img="./images/4.jpg"
+                    data-made="Betterfoods"
+                  >
+                    <iconify-icon icon="bxs:cart"></iconify-icon>
+                    <span class="fw-semibold">Add to cart</span>
+                  </button>
+                  
                 </div>
             </div>
         </div>
@@ -385,7 +455,18 @@
                         </span>
                     </div>
                     <p class="text-danger fs-5 fw-bold">$100.00</p>
-                    <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                    <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                    <button 
+                    class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                    data-name="Tesco Coconut" 
+                    data-kg="350g" 
+                    data-made="Betterfoods" 
+                    data-img="./images/5.jpg"
+                  >
+                    <iconify-icon icon="bxs:cart"></iconify-icon>
+                    <span class="fw-semibold">Add to cart</span>
+                  </button>
+                  
                 </div>
             </div>
         </div>
@@ -451,7 +532,18 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Zesco Ripe Bananas" 
+                  data-kg="350g" 
+                  data-made="Betterfoods" 
+                  data-img="./images/1.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -476,7 +568,18 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Orange Peek Zest" 
+                  data-made="Betterfoods" 
+                  data-kg="350g " 
+                  data-img="./images/2.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -501,7 +604,18 @@
                       </span>
                     </div>
                   <p class="text-danger fs-5 fw-bold">$45.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Tesco Green Seedless" 
+                  data-made="Betterfoods" 
+                  data-kg="350g" 
+                  data-img="./images/3.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -528,7 +642,18 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$40.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name=">Waterfi SwimActive" 
+                  data-kg="450g" 
+                  data-made="Betterfoods" 
+                  data-img="./images/4.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -552,8 +677,18 @@
                         <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
                       </span>
                   </div>
-                  <p class="text-danger fs-5 fw-bold">$100.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+               
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Tesco Coconut" 
+                  data-kg="350g " 
+                  data-made="Betterfoods" 
+                  data-img="./images/5.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -640,7 +775,17 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+  data-name="Zesco Ripe Bananas" 
+  data-price="120.00" 
+  data-img="./images/1.jpg"
+>
+  <iconify-icon icon="bxs:cart"></iconify-icon>
+  <span class="fw-semibold">Add to cart</span>
+</button>
+
               </div>
           </div>
       </div>
@@ -665,7 +810,17 @@
                     </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$45.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+  data-name="Zesco Ripe Bananas" 
+  data-price="120.00" 
+  data-img="./images/1.jpg"
+>
+  <iconify-icon icon="bxs:cart"></iconify-icon>
+  <span class="fw-semibold">Add to cart</span>
+</button>
+
               </div>
           </div>
       </div>
@@ -694,7 +849,17 @@
                   </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$40.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Zesco Ripe Bananas" 
+                  data-price="120.00" 
+                  data-img="./images/1.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -719,7 +884,17 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$100.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Zesco Ripe Bananas" 
+                  data-price="120.00" 
+                  data-img="./images/1.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -749,7 +924,17 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+  data-name="Zesco Ripe Bananas" 
+  data-price="120.00" 
+  data-img="./images/1.jpg"
+>
+  <iconify-icon icon="bxs:cart"></iconify-icon>
+  <span class="fw-semibold">Add to cart</span>
+</button>
+
               </div>
           </div>
       </div> 
@@ -775,7 +960,17 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$120.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Zesco Ripe Bananas" 
+                  data-price="120.00" 
+                  data-img="./images/1.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -800,7 +995,17 @@
                       </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$45.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Zesco Ripe Bananas" 
+                  data-price="120.00" 
+                  data-img="./images/1.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -829,7 +1034,17 @@
                     </span>
                   </div>
                   <p class="text-danger fs-5 fw-bold">$40.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+                  <!-- <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button> -->
+                  <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Zesco Ripe Bananas" 
+                  data-price="120.00" 
+                  data-img="./images/1.jpg"
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -853,8 +1068,18 @@
                         <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
                       </span>
                   </div>
-                  <p class="text-danger fs-5 fw-bold">$100.00</p>
-                  <button class="btn btn-success text-white fw-bold px-4"><iconify-icon icon="bxs:cart"></iconify-icon><span class="fw-semibold">Add to cart</span></button>
+              
+                    <button 
+                  class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
+                  data-name="Zesco Ripe Bananas" 
+                  data-made="Betterfoods"  
+                  data-img="./images/1.jpg"
+                  data-kg="350g"   
+                >
+                  <iconify-icon icon="bxs:cart"></iconify-icon>
+                  <span class="fw-semibold">Add to cart</span>
+                </button>
+                
               </div>
           </div>
       </div>
@@ -970,7 +1195,40 @@
       <!-- footer end -->
 
 
+      <!-- off canvas start -->
+
+      
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="cartItems">
+          <div id="cartItems"></div>
+<span id="cartQuantityBadge"></span>
+<div id="totalPrice"></div>
+          <!-- Cart items will appear here -->
+          <p>Empty!</p>
+      </div>
+      <!-- add to cart section footer -->
+      <div class="offcanvas-footer container mb-5">
+          <hr />
+          <div class="">
+              <strong class="text-black-50">total:</strong>
+              <strong id="totalPrice">$0.00</strong>
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            
+          </div>
+      </div>
+</div>
+
+      <!-- off canvas end -->
+
       <script src="./javaScript/ScriptLogin.js"></script>
       <script src="./javaScript/ScriptSingin.js"></script>
+      <script src="./javaScript/Add_to_cart.js"></script>
 </body>
 </html>
