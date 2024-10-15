@@ -10,7 +10,7 @@ document.getElementById('signupForm').addEventListener('submit', function(eve) {
       localStorage.setItem('Password', Password);
   
       window.location.href = "../login/login.html";
-      alert('Registered completely');
+      alert('Registered completed');
     }
   });
   

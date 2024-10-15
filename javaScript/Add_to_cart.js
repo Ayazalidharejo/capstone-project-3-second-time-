@@ -9,21 +9,27 @@ function updateCartDisplay() {
         return;
     }
 
+    
+
     cart.forEach((item, index) => {
         cartItemsDiv.innerHTML += `
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <img src="${item.img}" alt="${item.name}" style="width: 90px; height: 90px;" class="me-3">
-                <div class="flex-grow-1">${item.name} - $${item.price} x ${item.quantity}</div>
-                <div>
-                    <button class="btn mb-2 btn-sm btn-danger" onclick="updateQuantity(${index}, -1)">-</button>
-                    <span>${item.quantity}</span>
-                    <button class="btn btn-sm btn-success" onclick="updateQuantity(${index}, 1)">+</button>
+            <div class="card mb-3 p-3 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="${item.img}" alt="${item.name}" style="width: 90px; height: 90px; object-fit: cover;" class="me-3 rounded">
+                    <div class="flex-grow-1">
+                        <h5 class="mb-1">${item.name}</h5>
+                        <p class="text-muted mb-0">$${item.price} x ${item.quantity}</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-sm btn-outline-danger me-2" onclick="updateQuantity(${index}, -1)">-</button>
+                        <span class="px-2">${item.quantity}</span>
+                        <button class="btn btn-sm btn-outline-success ms-2" onclick="updateQuantity(${index}, 1)">+</button>
+                    </div>
                 </div>
             </div>
-            <hr/>
         `;
     });
-
+    
     updateTotalPrice(); // Ensure total price updates
 }
 
@@ -73,33 +79,3 @@ function updateTotalPrice() {
     totalPriceElement.innerText = `$${totalPrice}`;
 }
 
-// Example HTML structure for a product card
-// <div class="card-body">
-//     <img class="img-fluid" src="./images/1.jpg" alt="Image of a carton of eggs" height="100" width="150" />
-//     <div class="badge bg-light text-secondary border border-secondary rounded-pill mb-2">Betterfoods</div>
-//     <h6 class="card-title text-secondary fw-semibold">Zesco Ripe Bananas</h6>
-//     <p class="card-text text-secondary">350g</p>
-//     <div class="d-flex align-items-center mb-2">
-//         <span class="text-warning"></span>
-//         <span class="ms-2 fw-semibold">3</span>
-//         <span class="text-warning">
-//             <iconify-icon icon="line-md:star-filled"></iconify-icon>
-//             <iconify-icon icon="line-md:star-filled"></iconify-icon>
-//             <iconify-icon icon="line-md:star-filled"></iconify-icon>
-//             <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
-//             <iconify-icon class="text-secondary" icon="line-md:star-filled"></iconify-icon>
-//         </span>
-//     </div>
-//     <p class="text-danger fs-5 fw-bold">$120.00</p>
-//
-//     <button 
-//         class="btn btn-success text-white fw-bold px-4 add-to-cart-btn"
-//         data-name="Zesco Ripe Bananas" 
-//         data-price="120.00"  // Correct attribute for price
-//         data-img="./images/1.jpg"
-//         data-made="Betterfoods"
-//     >
-//         <iconify-icon icon="bxs:cart"></iconify-icon>
-//         <span class="fw-semibold">Add to cart</span>
-//     </button>
-// </div>
