@@ -75,7 +75,9 @@ function updateCartQuantityBadge() {
 
 function updateTotalPrice() {
     const totalPriceElement = document.getElementById('totalPrice');
+    const totalPriceElements = document.getElementById('totalPrices');
     const totalPrice = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0).toFixed(2);
+    totalPriceElements.innerText = `$${totalPrice}`;
     totalPriceElement.innerText = `$${totalPrice}`;
 }
 

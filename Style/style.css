@@ -1,0 +1,33 @@
+
+
+@media (max-width: 575.98px) {
+   
+    .carousel-item {
+        height: 60vh;
+
+    }
+    .carousel-item img {
+        height: 60vh;
+    }
+}
+
+
+  .name:hover{
+    color: rgb(66, 151, 66);
+  }
+  #boxalert{
+    display: none;
+  }
+  .alert{
+    position: absolute;
+     top: 0px;
+     left: 900px;
+  }
+
+.Cart-body img:hover{
+  content: url("../images/1.jpg");
+}
+
+
+
+
