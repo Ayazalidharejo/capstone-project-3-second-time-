@@ -30,7 +30,7 @@ function updateCartDisplay() {
         `;
     });
     
-    updateTotalPrice(); // Ensure total price updates
+    updateTotalPrice(); 
 }
 
 document.querySelectorAll('.add-to-cart-btn').forEach(button => {
